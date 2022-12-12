@@ -1,8 +1,12 @@
 import { pageLoad } from "../dist/page-load";
+import { menuPage } from "../dist/menu-page";
+import { NavBar } from "../dist/nav-bar";
+
+//init page function calls
+NavBar();
 pageLoad();
 
-import { menuPage } from "../dist/menu-page";
-
+//navbar button event listener functions
 const homBtn = document
   .getElementById("nav-home")
   .addEventListener("click", () => {
